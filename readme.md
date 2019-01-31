@@ -1,5 +1,5 @@
 # Project 5 - Recurrent Neural Network (RNN)
-
+- check out the final [report](ECE542_Project5_report.pdf) for results and visualizations!
 - The goal of this project is for you to become familiar with a wildly used RNN unit, Long short-term memory (LSTM)
 - This project contains two parts: 1. Design LSTM cells for counting digits in a sequence; 2. Language modeling using RNN with LSTM units.
 
@@ -21,14 +21,6 @@
   3. Count number of `0` after receiving the `2` in the sequence, but erase the counts after receiving `3`, then continue to count from 0 after receiving another `2`.
 - For example, given the sequence `[1, 1, 0, 4, 3, 4, 0, 2, 0, 2, 0, 4, 3, 0, 2, 4, 5, 0, 9, 0, 4]`, the output for task 1 - 3 should be `7`, `5` and `2`.
 
-## 2. Get the code
-- The incomplete code for this part can be found [here](part1/).
-- Go to [part1/experiment/](part1/experiment), then run
-```
-python run.py
-```
-You will see something like this:
-![fig1](figs/fig1.png)
 
 The task 1 is already implemented, and task 2 and 3 are not.
 
@@ -94,10 +86,3 @@ Upload your report in `unityID/proj05/` with `name.cvs`. Write up including figu
 1. Please make sure you can get the result shown in the second figure of part one description without modifying `run.py` before submission. Because I will automatically evaluate your code use a script similar to `run.py`. 
 2. Please do not upload data and trained models. 
 
-## Reference
-- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-- [A Critical Review of Recurrent Neural Networks for Sequence Learning](https://arxiv.org/abs/1506.00019)
-- [Visualizing and Understanding Recurrent Networks](https://arxiv.org/abs/1506.02078)
-- [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
-- [Language modeling a billion words](http://torch.ch/blog/2016/07/25/nce.html)
-- [Tensorflow Language Modeling Tutorial](https://www.tensorflow.org/tutorials/sequences/recurrent)

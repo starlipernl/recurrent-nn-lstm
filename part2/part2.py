@@ -6,7 +6,7 @@ import argparse
 import datetime as dt
 
 
-data_path = "/home/shaunak/Neural-Networks/proj5/data"
+data_path = "C:/Users/starl/PycharmProjects/ece542_project5/data"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--train', type=int, default=1, help='An integer: 1 to train, 2 to test')
@@ -16,7 +16,7 @@ args = parser.parse_args()
 
 def read_words(filename):
     with tf.gfile.GFile(filename, "r") as f:
-        return f.read().decode("utf-8").replace("\n", "<eos>").split()
+        return f.read().replace("\n", "<eos>").split()
 
 
 def build_vocab(filename):
